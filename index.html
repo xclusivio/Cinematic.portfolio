@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>Alexander Vale — Actor • Storyteller • Artist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080808;--panel:#111;--text:#f2f0ec;--muted:#aaa6a0;--red:#b9272e;--line:rgba(255,255,255,.15);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--mono:'DM Mono',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);overflow-x:hidden}body:after{content:"";pointer-events:none;position:fixed;inset:0;z-index:20;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.topbar{height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;position:absolute;top:0;left:0;width:100%;z-index:30;border-bottom:1px solid rgba(255,255,255,.15)}.brand{font-family:var(--serif);font-size:20px;letter-spacing:.06em}.brand span{color:var(--red)}.nav{display:flex;gap:28px;align-items:center}.nav a,.nav-contact{font:10px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#dedbd6;transition:color .25s}.nav a:hover,.nav-contact:hover{color:#ff5a60}.nav-contact{border:1px solid #777;padding:12px 16px;background:transparent;cursor:pointer}.menu-toggle{display:none;background:none;border:0;font-size:24px}.hero{height:100svh;min-height:700px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#171312}.hero-image{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.28) 52%,rgba(0,0,0,.12) 100%),linear-gradient(0deg,#080808 0%,transparent 45%),url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=2200&q=90') center 36%/cover;transform:scale(1.06);animation:heroSettle 2.2s cubic-bezier(.2,.7,.2,1) forwards}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 72% 40%,transparent 0%,rgba(0,0,0,.16) 45%,rgba(0,0,0,.7) 100%)}.hero-content{position:relative;z-index:2;padding:0 8vw 8vh;max-width:1100px;animation:rise 1.2s .25s both}.eyebrow,.label{font:10px var(--mono);text-transform:uppercase;letter-spacing:.2em;color:#d6d0c8}.eyebrow:before{content:"";display:inline-block;width:28px;height:1px;background:var(--red);vertical-align:middle;margin-right:12px}.hero h1{font:clamp(4.5rem,12.8vw,12.5rem)/.82 var(--serif);font-weight:400;letter-spacing:-.075em;margin:25px 0 22px;max-width:1000px}.hero h1 span{display:block;font-style:italic;color:#d6d0c8;margin-left:12vw}.tagline{font:11px var(--mono);letter-spacing:.23em;color:#e4e0da}.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;margin-top:46px}.hero-note{max-width:310px;color:#b8b3ac;font-size:13px;line-height:1.8}.round-play{display:flex;align-items:center;gap:13px;border:0;background:none;cursor:pointer;text-transform:uppercase;letter-spacing:.16em;font:10px var(--mono)}.play-circle{width:56px;height:56px;border:1px solid rgba(255,255,255,.6);border-radius:50%;display:grid;place-items:center;transition:.3s}.round-play:hover .play-circle{background:var(--red);border-color:var(--red);transform:scale(1.06)}.side-index{position:absolute;right:3vw;top:50%;z-index:3;writing-mode:vertical-rl;font:9px var(--mono);letter-spacing:.2em;color:#b7b0a9}.scroll-cue{position:absolute;left:5vw;bottom:28px;z-index:3;font:9px var(--mono);letter-spacing:.2em;color:#aaa}.scroll-cue:after{content:"";display:inline-block;width:54px;height:1px;background:var(--red);margin-left:14px;vertical-align:middle}
+section{padding:125px 8vw;position:relative}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:55px}.kicker{font:10px var(--mono);letter-spacing:.2em;color:#d64a50;text-transform:uppercase;margin-bottom:18px}.section-head h2{font:clamp(2.8rem,6vw,6.5rem)/.98 var(--serif);font-weight:400;letter-spacing:-.055em;margin:0}.section-head h2 em{font-weight:400;color:#a8a19a}.section-intro{font-size:13px;line-height:1.9;color:var(--muted);max-width:290px;margin:0 0 5px}.films{background:#0b0b0b}.film-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:18px}.film-card{position:relative;min-height:420px;overflow:hidden;background:#181615;cursor:pointer;isolation:isolate}.film-card:first-child{min-height:540px}.film-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.72) saturate(.7);transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}.film-card:hover img{transform:scale(1.06);filter:brightness(.88) saturate(.9)}.film-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.94),transparent 70%);z-index:0}.film-info{position:absolute;z-index:1;bottom:0;padding:28px;width:100%}.film-type{font:9px var(--mono);letter-spacing:.18em;color:#f07b7f;text-transform:uppercase}.film-info h3{font:clamp(1.8rem,3vw,3.2rem) var(--serif);font-weight:400;margin:10px 0}.film-meta{display:flex;justify-content:space-between;gap:10px;font:10px var(--mono);letter-spacing:.08em;color:#c5beb7;border-top:1px solid rgba(255,255,255,.28);padding-top:15px}.film-arrow{position:absolute;right:26px;top:26px;z-index:2;width:36px;height:36px;border:1px solid #ffffff77;border-radius:50%;display:grid;place-items:center;transition:.3s}.film-card:hover .film-arrow{background:var(--red);border-color:var(--red);transform:rotate(45deg)}
+.showreel{padding:0;min-height:600px;display:grid;grid-template-columns:1fr 1fr;background:#111}.reel-image{min-height:600px;position:relative;background:linear-gradient(0deg,#1111,#1111),url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1300&q=85') center/cover}.reel-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 70%,#111)}.reel-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;border:1px solid #ffffffaa;width:90px;height:90px;border-radius:50%;background:#08080855;backdrop-filter:blur(6px);display:grid;place-items:center;cursor:pointer;transition:.3s}.reel-play:hover{background:var(--red);border-color:var(--red);transform:translate(-50%,-50%) scale(1.07)}.reel-copy{padding:12vw 8vw 8vw 4vw;align-self:center}.reel-copy h2{font:clamp(3rem,6vw,6rem)/.98 var(--serif);font-weight:400;letter-spacing:-.06em;margin:20px 0}.reel-copy p{color:var(--muted);font-size:13px;line-height:1.9;max-width:370px}.text-link{display:inline-flex;gap:22px;align-items:center;border-bottom:1px solid #777;padding:15px 0;margin-top:22px;font:10px var(--mono);letter-spacing:.15em;text-transform:uppercase}.text-link span{color:#f06469;font-size:18px}
+.filmography{background:#e9e5df;color:#141312}.filmography .kicker{color:#9e2026}.filmography .section-intro{color:#625e59}.credits{border-top:1px solid #bdb7af}.credit-row{display:grid;grid-template-columns:100px 1fr 1fr 120px;gap:20px;align-items:center;padding:25px 0;border-bottom:1px solid #bdb7af;transition:padding .25s}.credit-row:hover{padding-left:12px}.credit-year{font:12px var(--mono);color:#7c756d}.credit-title{font:clamp(1.35rem,2.5vw,2.1rem) var(--serif)}.credit-role{font-size:12px;color:#6e6861}.credit-kind{justify-self:end;font:9px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#8f2025;border:1px solid #c6bdb4;padding:9px 11px}
+.split-section{display:grid;grid-template-columns:1fr 1fr;gap:10vw;align-items:center}.bio-visual{position:relative;min-height:620px;background:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1100&q=85') center 25%/cover;filter:saturate(.55)}.bio-visual:before{content:"";position:absolute;inset:20px -20px -20px 20px;border:1px solid #ffffff33;z-index:-1}.vertical-note{position:absolute;right:-37px;top:40px;writing-mode:vertical-rl;font:9px var(--mono);letter-spacing:.2em;color:#aaa}.bio-copy h2{font:clamp(3rem,6vw,6.2rem)/.95 var(--serif);font-weight:400;letter-spacing:-.06em;margin:0 0 28px}.bio-copy h2 em{color:#b7aea5}.bio-copy p{font-size:13px;line-height:2;color:#aaa39c;max-width:490px}.bio-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:42px;padding-top:25px;border-top:1px solid var(--line)}.stat strong{display:block;font:2.3rem var(--serif);font-weight:400}.stat span{font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#9e9891}
+.experience{background:#101010}.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333;border:1px solid #333}.experience-card{background:#101010;padding:35px 30px;min-height:260px;transition:background .3s}.experience-card:hover{background:#171313}.experience-card .num{font:10px var(--mono);color:#d54a50}.experience-card h3{font:2rem var(--serif);font-weight:400;margin:45px 0 14px}.experience-card p{font-size:12px;color:#a7a19a;line-height:1.8;margin:0}.awards{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw}.awards-list{border-top:1px solid var(--line)}.award{display:grid;grid-template-columns:65px 1fr;gap:15px;padding:22px 0;border-bottom:1px solid var(--line)}.award-year{font:11px var(--mono);color:#d64a50}.award h3{font:1.45rem var(--serif);font-weight:400;margin:0 0 7px}.award p{margin:0;color:#8f8982;font-size:11px;letter-spacing:.05em}
+.press{background:#dcd7d0;color:#171615}.press .kicker{color:#9e2026}.press .section-intro{color:#68615b}.press-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.press-card{border-top:1px solid #aaa198;padding-top:20px}.press-source{font:9px var(--mono);letter-spacing:.16em;color:#8c2025}.press-card blockquote{font:clamp(1.5rem,2.5vw,2.7rem)/1.2 var(--serif);margin:25px 0 28px}.press-card a{font:9px var(--mono);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid #aaa;padding-bottom:8px}
+.contact{padding:130px 8vw 50px;background:#080808}.contact-top{display:grid;grid-template-columns:1.2fr .8fr;gap:10vw;align-items:end;padding-bottom:80px;border-bottom:1px solid var(--line)}.contact h2{font:clamp(4rem,10vw,10rem)/.85 var(--serif);font-weight:400;letter-spacing:-.075em;margin:20px 0 0}.contact h2 em{color:#b52a30}.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-details span{display:block;font:9px var(--mono);letter-spacing:.15em;color:#8f8982;text-transform:uppercase;margin-bottom:12px}.contact-details a,.contact-details p{font-size:13px;color:#e2ded8;margin:0;line-height:1.8}.contact-details a:hover{color:#f05c62}.footer{display:flex;justify-content:space-between;gap:20px;padding-top:26px;font:9px var(--mono);letter-spacing:.1em;color:#77716a;text-transform:uppercase}.footer-links{display:flex;gap:20px}.footer-links a:hover{color:#eee}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:5vw}.modal.open{display:flex}.modal-inner{width:min(1000px,100%);position:relative}.modal-close{position:absolute;right:0;top:-45px;border:1px solid #777;background:none;width:36px;height:36px;border-radius:50%;cursor:pointer}.video-frame{aspect-ratio:16/9;background:#111;width:100%;border:1px solid #333}.video-frame iframe{width:100%;height:100%;border:0}.modal-caption{font:10px var(--mono);letter-spacing:.15em;color:#aaa;margin-top:14px;text-transform:uppercase}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes rise{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}@keyframes heroSettle{to{transform:scale(1)}}@media(max-width:900px){.nav{gap:14px}.nav a{font-size:9px}.film-grid{grid-template-columns:1fr 1fr}.film-card:first-child{grid-column:span 2;min-height:460px}.film-card{min-height:380px}.split-section{gap:6vw}.bio-visual{min-height:500px}.experience-grid{grid-template-columns:1fr 1fr}.contact-top{gap:5vw}}@media(max-width:650px){.topbar{height:66px;padding:0 6vw}.menu-toggle{display:block}.nav{display:none;position:absolute;top:65px;left:0;width:100%;padding:25px 6vw;background:#0a0a0a;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav.open{display:flex}.nav a{font-size:11px}.nav-contact{margin-top:6px}.hero{min-height:680px}.hero-image{background-position:58% center}.hero-content{padding:0 7vw 95px}.hero h1{font-size:clamp(4.5rem,18vw,7rem)}.hero h1 span{margin-left:6vw}.hero-bottom{align-items:flex-start;flex-direction:column;margin-top:32px}.hero-note{max-width:280px}.side-index{right:4vw}.scroll-cue{left:7vw}section{padding:85px 7vw}.section-head{display:block;margin-bottom:35px}.section-intro{margin-top:22px}.film-grid{grid-template-columns:1fr}.film-card:first-child{grid-column:auto;min-height:470px}.film-card{min-height:400px}.showreel{grid-template-columns:1fr}.reel-image{min-height:380px}.reel-image:after{background:linear-gradient(0deg,#111,transparent 35%)}.reel-copy{padding:30px 7vw 75px}.credit-row{grid-template-columns:55px 1fr auto;gap:12px;padding:20px 0}.credit-role{grid-column:2;grid-row:2}.credit-kind{grid-column:3;grid-row:1/3;font-size:8px;padding:7px}.split-section{grid-template-columns:1fr;gap:60px}.bio-visual{min-height:460px;margin-right:20px}.vertical-note{right:-27px}.bio-copy h2{font-size:4rem}.experience-grid{grid-template-columns:1fr}.experience-card{min-height:220px}.experience-card h3{margin-top:28px}.awards{grid-template-columns:1fr;gap:35px}.press-grid{grid-template-columns:1fr;gap:35px}.press-card blockquote{font-size:2rem;margin:18px 0 22px}.contact{padding:85px 7vw 30px}.contact-top{grid-template-columns:1fr;gap:50px;padding-bottom:55px}.contact h2{font-size:clamp(4rem,17vw,7rem)}.contact-details{gap:25px 15px}.footer{flex-direction:column;line-height:1.8}.footer-links{flex-wrap:wrap}.filmography .section-head h2{font-size:3.7rem}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Alexander Vale home">A<span>.</span> VALE</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav" id="nav">
+    <a href="#work">Selected work</a><a href="#showreel">Showreel</a><a href="#filmography">Filmography</a><a href="#about">About</a><a href="#press">Press</a>
+    <button class="nav-contact" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Representation ↗</button>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-image"></div>
+  <div class="side-index">INDEPENDENT SPIRIT · 2026</div>
+  <div class="hero-content">
+    <div class="eyebrow">Actor · Los Angeles / London</div>
+    <h1>ALEXANDER <span>Vale.</span></h1>
+    <div class="tagline">ACTOR &nbsp;•&nbsp; STORYTELLER &nbsp;•&nbsp; ARTIST</div>
+    <div class="hero-bottom">
+      <p class="hero-note">Building human stories from the quietest moments to the loudest truths. Film, television and stage.</p>
+      <button class="round-play" data-video="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1" data-caption="Official actor showreel"><span class="play-circle">▶</span> Watch showreel</button>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL TO EXPLORE</div>
+</section>
+
+<section class="films" id="work">
+  <div class="section-head reveal"><div><div class="kicker">01 / Selected work</div><h2>Stories that <em>stay.</em></h2></div><p class="section-intro">A selection of roles shaped by complicated people, impossible choices, and the things left unsaid.</p></div>
+  <div class="film-grid">
+    <article class="film-card reveal" tabindex="0" role="button" data-video="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1" data-caption="The Last Light — selected scene">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=85" alt="Stormy ocean beneath a moody sky"><span class="film-arrow">↗</span><div class="film-info"><div class="film-type">Feature film · Drama</div><h3>The Last Light</h3><div class="film-meta"><span>2025</span><span>LEAD ROLE</span></div></div>
+    </article>
+    <article class="film-card reveal" tabindex="0" role="button" data-video="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1" data-caption="Ashes & Gold — selected scene">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="City lights at night"><span class="film-arrow">↗</span><div class="film-info"><div class="film-type">Limited series · Thriller</div><h3>Ashes &amp; Gold</h3><div class="film-meta"><span>2024</span><span>RECURRING</span></div></div>
+    </article>
+    <article class="film-card reveal" tabindex="0" role="button" data-video="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1" data-caption="The Quiet War — selected scene">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Mountain landscape in mist"><span class="film-arrow">↗</span><div class="film-info"><div class="film-type">Independent film · Mystery</div><h3>The Quiet War</h3><div class="film-meta"><span>2023</span><span>SUPPORTING</span></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="showreel" id="showreel">
+  <div class="reel-image"><button class="reel-play" aria-label="Play showreel" data-video="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1" data-caption="Alexander Vale — showreel"><span style="font-size:24px;margin-left:4px">▶</span></button></div>
+  <div class="reel-copy reveal"><div class="kicker">02 / On camera</div><h2>A face.<br>A thousand <em>lives.</em></h2><p>A curated look at character, transformation, and the moments between the lines. For casting, representation, and creative collaborators.</p><a href="#contact" class="text-link">Request full reel <span>↗</span></a></div>
+</section>
+
+<section class="filmography" id="filmography">
+  <div class="section-head reveal"><div><div class="kicker">03 / Credits</div><h2>Filmography<span style="color:#a32127">.</span></h2></div><p class="section-intro">Selected screen credits. Full CV and additional materials available on request.</p></div>
+  <div class="credits">
+    <div class="credit-row reveal"><span class="credit-year">2025</span><span class="credit-title">The Last Light</span><span class="credit-role">Elias Ward · Lead</span><span class="credit-kind">Feature</span></div>
+    <div class="credit-row reveal"><span class="credit-year">2024</span><span class="credit-title">Ashes &amp; Gold</span><span class="credit-role">Daniel Cross · Recurring</span><span class="credit-kind">Streaming</span></div>
+    <div class="credit-row reveal"><span class="credit-year">2023</span><span class="credit-title">The Quiet War</span><span class="credit-role">Thomas Reed · Supporting</span><span class="credit-kind">Feature</span></div>
+    <div class="credit-row reveal"><span class="credit-year">2022</span><span class="credit-title">Northbound</span><span class="credit-role">Jamie · Guest Star</span><span class="credit-kind">Television</span></div>
+    <div class="credit-row reveal"><span class="credit-year">2021</span><span class="credit-title">The Glass House</span><span class="credit-role">Michael · Lead</span><span class="credit-kind">Theatre</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="split-section">
+    <div class="bio-visual reveal"><span class="vertical-note">ALEXANDER VALE · PORTRAIT STUDY</span></div>
+    <div class="bio-copy reveal"><div class="kicker">04 / The artist</div><h2>Curiosity is<br>the <em>craft.</em></h2><p>Alexander Vale is a screen and stage actor drawn to layered characters and stories that challenge the way we see one another. His work moves between intimate independent cinema, character-led television, and live performance.</p><p>Grounded in close observation and a collaborative spirit, he approaches each role as its own world—built with patience, precision, and an appetite for the unexpected.</p><div class="bio-stats"><div class="stat"><strong>12+</strong><span>Years in craft</span></div><div class="stat"><strong>18</strong><span>Screen credits</span></div><div class="stat"><strong>06</strong><span>Stage works</span></div></div></div>
+  </div>
+</section>
+
+<section class="experience">
+  <div class="section-head reveal"><div><div class="kicker">05 / Beyond the frame</div><h2>Every stage.<br><em>Every medium.</em></h2></div><p class="section-intro">From intimate theatre to long-form streaming stories, the work is always about connection.</p></div>
+  <div class="experience-grid">
+    <article class="experience-card reveal"><span class="num">01 — SCREEN</span><h3>Television &amp; Streaming</h3><p>Character-led series, limited dramas, and episodic guest appearances across contemporary and period storytelling.</p></article>
+    <article class="experience-card reveal"><span class="num">02 — STAGE</span><h3>Theatre</h3><p>Live performance, new writing, and classic texts explored through ensemble work and bold direction.</p></article>
+    <article class="experience-card reveal"><span class="num">03 — HONOURS</span><h3>Awards &amp; Recognition</h3><p>Independent festival selections, ensemble recognition, and nominations celebrating emerging screen talent.</p></article>
+  </div>
+</section>
+
+<section>
+  <div class="awards">
+    <div class="reveal"><div class="kicker">06 / Recognition</div><h2 style="font:clamp(3rem,5vw,5rem)/.98 var(--serif);font-weight:400;letter-spacing:-.05em;margin:0">The work<br>speaks <em style="color:#a8a19a">first.</em></h2><p style="font-size:13px;line-height:1.9;color:#9e9891;max-width:300px;margin-top:25px">Selected honours and festival recognition. Credits and award details should be verified before publication.</p></div>
+    <div class="awards-list">
+      <div class="award reveal"><span class="award-year">2025</span><div><h3>Best Actor — Nominee</h3><p>Independent Cinema Awards · The Last Light</p></div></div>
+      <div class="award reveal"><span class="award-year">2024</span><div><h3>Outstanding Ensemble</h3><p>International Television Festival · Ashes &amp; Gold</p></div></div>
+      <div class="award reveal"><span class="award-year">2023</span><div><h3>Jury Special Mention</h3><p>North Coast Film Festival · The Quiet War</p></div></div>
+      <div class="award reveal"><span class="award-year">2021</span><div><h3>Breakthrough Performance — Nominee</h3><p>New Stage Review · The Glass House</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="press" id="press">
+  <div class="section-head reveal"><div><div class="kicker">07 / In the press</div><h2>Words in <em>print.</em></h2></div><p class="section-intro">Selected editorial coverage and critical response.</p></div>
+  <div class="press-grid">
+    <article class="press-card reveal"><div class="press-source">THE FRAME · 2025</div><blockquote>“A quietly magnetic performance that gives every silence its own gravity.”</blockquote><a href="#contact">Read feature ↗</a></article>
+    <article class="press-card reveal"><div class="press-source">SCREEN / SCENE · 2024</div><blockquote>“Vale brings an uncommon precision to a character full of contradictions.”</blockquote><a href="#contact">Read interview ↗</a></article>
+    <article class="press-card reveal"><div class="press-source">THE STAGE EDIT · 2023</div><blockquote>“An actor who understands that restraint can be its own kind of spectacle.”</blockquote><a href="#contact">Read review ↗</a></article>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-top">
+    <div class="reveal"><div class="kicker">08 / Representation &amp; bookings</div><h2>Let's make<br>something <em>real.</em></h2></div>
+    <div class="contact-details reveal">
+      <div><span>Representation</span><a href="mailto:agent@example.com?subject=Representation%20Enquiry">agent@example.com ↗</a><p style="color:#777;margin-top:5px">Northline Talent Agency</p></div>
+      <div><span>General enquiries</span><a href="mailto:hello@example.com?subject=Alexander%20Vale%20Enquiry">hello@example.com ↗</a></div>
+      <div><span>Based between</span><p>London · Los Angeles</p></div>
+      <div><span>Social</span><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+    </div>
+  </div>
+  <footer class="footer"><span>© <span id="year"></span> Alexander Vale · All rights reserved</span><div class="footer-links"><a href="#home">Back to top ↑</a><span>Built for the love of the frame</span></div></footer>
+</section>
+</main>
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="modal-inner"><button class="modal-close" id="modalClose" aria-label="Close video">✕</button><div class="video-frame" id="videoFrame"></div><div class="modal-caption" id="modalCaption">Official showreel</div></div>
+</div>
+<script>
+const modal=document.getElementById('videoModal'),frame=document.getElementById('videoFrame'),caption=document.getElementById('modalCaption');
+function openVideo(url,label){if(!url)return;frame.innerHTML='<iframe src="'+url+'" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';caption.textContent=label||'Showreel';modal.classList.add('open');document.body.style.overflow='hidden';document.getElementById('modalClose').focus()}
+function closeVideo(){modal.classList.remove('open');frame.innerHTML='';document.body.style.overflow='';}
+document.querySelectorAll('[data-video]').forEach(el=>{el.addEventListener('click',()=>openVideo(el.dataset.video,el.dataset.caption));if(el.classList.contains('film-card'))el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openVideo(el.dataset.video,el.dataset.caption)}})});
+document.getElementById('modalClose').addEventListener('click',closeVideo);modal.addEventListener('click',e=>{if(e.target===modal)closeVideo()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVideo()});
+const menuToggle=document.getElementById('menuToggle'),nav=document.getElementById('nav');menuToggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',opened);menuToggle.textContent=opened?'✕':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
